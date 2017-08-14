@@ -1,4 +1,35 @@
 package com.javaoop.training.shop.goods;
 
-public class GameConsole {
+import com.javaoop.training.shop.department.Department;
+
+public class GameConsole extends ElectronicDevice {
+    private int ram;
+
+    public GameConsole(int ram) {
+        this.ram = ram;
+    }
+
+    public GameConsole(double price, boolean hasGuarantee, String name, Department department, String company, int ram) {
+        super(price, hasGuarantee, name, department, company);
+        this.ram = ram;
+    }
+
+    public int getRam() {
+        return ram;
+    }
+
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
+
+    public void loadGame() {
+
+    }
+
+    @Override
+    public String toString() {
+        return "GameConsole{" +
+                "ram=" + ram +
+                '}';
+    }
 }
