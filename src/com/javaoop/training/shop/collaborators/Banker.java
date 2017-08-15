@@ -1,21 +1,22 @@
 package com.javaoop.training.shop.collaborators;
 
 import com.javaoop.training.shop.bank.Bank;
-import com.javaoop.training.shop.department.Department;
+import com.javaoop.training.shop.interfaces.BankInterface;
+import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
 public class Banker extends Employee {
-    private Bank bank;
+    private BankInterface bank;
 
     public Banker(Bank bank) {
         this.bank = bank;
     }
 
-    public Banker(String name, Department department, boolean isFree, Bank bank) {
+    public Banker(String name, DepartmentInterface department, boolean isFree, Bank bank) {
         super(name, department, isFree);
         this.bank = bank;
     }
 
-    public Bank getBank() {
+    public BankInterface getBank() {
         return bank;
     }
 

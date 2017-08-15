@@ -1,6 +1,8 @@
 package com.javaoop.training.shop.bank;
 
-public class Bank {
+import com.javaoop.training.shop.interfaces.BankInterface;
+
+public class Bank implements BankInterface{
     private String name;
     private String creditDescription;
 
@@ -12,6 +14,8 @@ public class Bank {
         this.creditDescription = creditDescription;
     }
 
+
+    @Override
     public String getName() {
         return name;
     }
@@ -20,12 +24,23 @@ public class Bank {
         this.name = name;
     }
 
+    @Override
     public String getCreditDescription() {
         return creditDescription;
     }
 
     public void setCreditDescription(String creditDescription) {
         this.creditDescription = creditDescription;
+    }
+
+    @Override
+    public void checkInformation() {
+
+    }
+
+    @Override
+    public void giveCredit() {
+
     }
 
     @Override

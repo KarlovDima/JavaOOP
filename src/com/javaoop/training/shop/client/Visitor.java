@@ -1,6 +1,8 @@
 package com.javaoop.training.shop.client;
 
-public class Visitor {
+import com.javaoop.training.shop.interfaces.VisitorInterface;
+
+public class Visitor implements VisitorInterface {
     private String name;
 
     public Visitor() {
@@ -12,6 +14,7 @@ public class Visitor {
         this.name = name;
     }
 
+    @Override
     public String getName() {
         return name;
     }
@@ -20,7 +23,13 @@ public class Visitor {
         this.name = name;
     }
 
+    @Override
     public void buy(){
+
+    }
+
+    @Override
+    public void returnGood() {
 
     }
 

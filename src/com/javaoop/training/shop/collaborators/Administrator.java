@@ -1,13 +1,13 @@
 package com.javaoop.training.shop.collaborators;
 
-import com.javaoop.training.shop.department.Department;
+import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
 public class Administrator extends Employee {
 
     public Administrator() {
     }
 
-    public Administrator(String name, Department department, boolean isFree) {
+    public Administrator(String name, DepartmentInterface department, boolean isFree) {
         super(name, department, isFree);
     }
 

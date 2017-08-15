@@ -1,13 +1,13 @@
 package com.javaoop.training.shop.collaborators;
 
-import com.javaoop.training.shop.department.Department;
+import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
 public class Cashier extends Employee{
 
     public Cashier() {
     }
 
-    public Cashier(String name, Department department, boolean isFree) {
+    public Cashier(String name, DepartmentInterface department, boolean isFree) {
         super(name, department, isFree);
     }
 

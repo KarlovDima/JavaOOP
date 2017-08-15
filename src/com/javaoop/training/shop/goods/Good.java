@@ -1,18 +1,19 @@
 package com.javaoop.training.shop.goods;
 
-import com.javaoop.training.shop.department.Department;
+import com.javaoop.training.shop.interfaces.DepartmentInterface;
+import com.javaoop.training.shop.interfaces.GoodInterface;
 
-public class Good {
+public class Good implements GoodInterface{
     private double price;
     private boolean hasGuarantee;
     private String name;
-    private Department department;
+    private DepartmentInterface department;
     private String company;
 
     public Good() {
     }
 
-    public Good(double price, boolean hasGuarantee, String name, Department department, String company) {
+    public Good(double price, boolean hasGuarantee, String name, DepartmentInterface department, String company) {
         this.price = price;
         this.hasGuarantee = hasGuarantee;
         this.name = name;
@@ -20,6 +21,7 @@ public class Good {
         this.company = company;
     }
 
+    @Override
     public double getPrice() {
         return price;
     }
@@ -28,7 +30,8 @@ public class Good {
         this.price = price;
     }
 
-    public boolean isHasGuarantee() {
+    @Override
+    public boolean hasGuarantee() {
         return hasGuarantee;
     }
 
@@ -36,6 +39,7 @@ public class Good {
         this.hasGuarantee = hasGuarantee;
     }
 
+    @Override
     public String getName() {
         return name;
     }
@@ -44,14 +48,16 @@ public class Good {
         this.name = name;
     }
 
-    public Department getDepartment() {
+    @Override
+    public DepartmentInterface getDepartment() {
         return department;
     }
 
-    public void setDepartment(Department department) {
+    public void setDepartment(DepartmentInterface department) {
         this.department = department;
     }
 
+    @Override
     public String getCompany() {
         return company;
     }

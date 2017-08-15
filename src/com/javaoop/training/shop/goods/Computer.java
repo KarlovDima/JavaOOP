@@ -1,6 +1,6 @@
 package com.javaoop.training.shop.goods;
 
-import com.javaoop.training.shop.department.Department;
+import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
 public class Computer extends ElectronicDevice {
     private int ram;
@@ -9,7 +9,7 @@ public class Computer extends ElectronicDevice {
         this.ram = ram;
     }
 
-    public Computer(double price, boolean hasGuarantee, String name, Department department, String company, int ram) {
+    public Computer(double price, boolean hasGuarantee, String name, DepartmentInterface department, String company, int ram) {
         super(price, hasGuarantee, name, department, company);
         this.ram = ram;
     }

@@ -1,13 +1,13 @@
 package com.javaoop.training.shop.collaborators;
 
-import com.javaoop.training.shop.department.Department;
+import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
 public class Security extends Employee {
 
     public Security() {
     }
 
-    public Security(String name, Department department, boolean isFree) {
+    public Security(String name, DepartmentInterface department, boolean isFree) {
         super(name, department, isFree);
     }
 
