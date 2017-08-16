@@ -2,7 +2,7 @@ package com.javaoop.training.shop.client;
 
 import com.javaoop.training.shop.interfaces.VisitorInterface;
 
-public class Visitor implements VisitorInterface {
+public abstract class Visitor implements VisitorInterface {
     private String name;
 
     public Visitor() {

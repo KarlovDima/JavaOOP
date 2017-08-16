@@ -3,7 +3,7 @@ package com.javaoop.training.shop.goods;
 import com.javaoop.training.shop.interfaces.DepartmentInterface;
 import com.javaoop.training.shop.interfaces.GoodInterface;
 
-public class Good implements GoodInterface{
+public abstract class Good implements GoodInterface{
     private double price;
     private boolean hasGuarantee;
     private String name;

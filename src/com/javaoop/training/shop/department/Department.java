@@ -6,7 +6,7 @@ import com.javaoop.training.shop.interfaces.GoodInterface;
 
 import java.util.ArrayList;
 
-public class Department implements DepartmentInterface {
+public abstract class Department implements DepartmentInterface {
 
     private String name;
     private ArrayList<EmployeeInterface> employeeArrayList;

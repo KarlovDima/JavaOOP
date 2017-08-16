@@ -3,7 +3,7 @@ package com.javaoop.training.shop.collaborators;
 import com.javaoop.training.shop.interfaces.DepartmentInterface;
 import com.javaoop.training.shop.interfaces.EmployeeInterface;
 
-public class Employee implements EmployeeInterface{
+public abstract class Employee implements EmployeeInterface{
     private  String name;
     private DepartmentInterface department;
     private boolean isFree;

@@ -2,7 +2,7 @@ package com.javaoop.training.shop.bank;
 
 import com.javaoop.training.shop.interfaces.BankInterface;
 
-public class Bank implements BankInterface{
+public abstract class Bank implements BankInterface{
     private String name;
     private String creditDescription;
 
