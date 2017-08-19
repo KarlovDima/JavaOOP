@@ -2,7 +2,7 @@ package com.javaoop.training.shop.collaborators;
 
 import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
-public class Cashier extends Employee{
+public class Cashier extends AbstractEmployee {
 
     public Cashier() {
     }

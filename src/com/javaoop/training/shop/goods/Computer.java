@@ -5,6 +5,10 @@ import com.javaoop.training.shop.interfaces.DepartmentInterface;
 public class Computer extends ElectronicDevice {
     private int ram;
 
+    public Computer(String name) {
+        super(name);
+    }
+
     public Computer(int ram) {
         this.ram = ram;
     }

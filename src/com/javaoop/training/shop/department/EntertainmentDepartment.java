@@ -5,7 +5,7 @@ import com.javaoop.training.shop.interfaces.GoodInterface;
 
 import java.util.ArrayList;
 
-public class EntertainmentDepartment extends Department{
+public class EntertainmentDepartment extends AbstractDepartment {
 
     public EntertainmentDepartment() {
     }

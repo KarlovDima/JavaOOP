@@ -1,6 +1,6 @@
 package com.javaoop.training.shop.client;
 
-public class CommonVisitor extends Visitor {
+public class CommonVisitor extends AbstractVisitor {
 
     public CommonVisitor() {
     }

@@ -3,17 +3,21 @@ package com.javaoop.training.shop.goods;
 import com.javaoop.training.shop.interfaces.DepartmentInterface;
 import com.javaoop.training.shop.interfaces.GoodInterface;
 
-public abstract class Good implements GoodInterface{
+public abstract class AbstractGood implements GoodInterface{
     private double price;
     private boolean hasGuarantee;
     private String name;
     private DepartmentInterface department;
     private String company;
 
-    public Good() {
+    public AbstractGood() {
     }
 
-    public Good(double price, boolean hasGuarantee, String name, DepartmentInterface department, String company) {
+    public AbstractGood(String name) {
+        this.name = name;
+    }
+
+    public AbstractGood(double price, boolean hasGuarantee, String name, DepartmentInterface department, String company) {
         this.price = price;
         this.hasGuarantee = hasGuarantee;
         this.name = name;
@@ -68,7 +72,7 @@ public abstract class Good implements GoodInterface{
 
     @Override
     public String toString() {
-        return "Good{" +
+        return "AbstractGood{" +
                 "price=" + price +
                 ", hasGuarantee=" + hasGuarantee +
                 ", name='" + name + '\'' +

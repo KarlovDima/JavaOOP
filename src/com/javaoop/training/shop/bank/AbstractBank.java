@@ -2,14 +2,14 @@ package com.javaoop.training.shop.bank;
 
 import com.javaoop.training.shop.interfaces.BankInterface;
 
-public abstract class Bank implements BankInterface{
+public abstract class AbstractBank implements BankInterface{
     private String name;
     private String creditDescription;
 
-    public Bank() {
+    public AbstractBank() {
     }
 
-    public Bank(String name, String creditDescription) {
+    public AbstractBank(String name, String creditDescription) {
         this.name = name;
         this.creditDescription = creditDescription;
     }
@@ -45,7 +45,7 @@ public abstract class Bank implements BankInterface{
 
     @Override
     public String toString() {
-        return "Bank{" +
+        return "AbstractBank{" +
                 "name='" + name + '\'' +
                 ", creditDescription='" + creditDescription + '\'' +
                 '}';

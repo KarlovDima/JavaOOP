@@ -1,6 +1,6 @@
 package com.javaoop.training.shop.bank;
 
-public class AlfaBank extends Bank {
+public class AlfaBank extends AbstractBank {
 
     public AlfaBank() {
     }

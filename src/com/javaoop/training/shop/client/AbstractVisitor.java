@@ -1,15 +1,16 @@
 package com.javaoop.training.shop.client;
 
+import com.javaoop.training.shop.interfaces.GoodInterface;
 import com.javaoop.training.shop.interfaces.VisitorInterface;
 
-public abstract class Visitor implements VisitorInterface {
+public abstract class AbstractVisitor implements VisitorInterface {
     private String name;
 
-    public Visitor() {
+    public AbstractVisitor() {
 
     }
 
-    public Visitor(String name) {
+    public AbstractVisitor(String name) {
 
         this.name = name;
     }
@@ -24,18 +25,18 @@ public abstract class Visitor implements VisitorInterface {
     }
 
     @Override
-    public void buy(){
-
+    public void buy(GoodInterface good){
+        System.out.println(good.getName());
     }
 
     @Override
-    public void returnGood() {
+    public void returnGood(GoodInterface good) {
 
     }
 
     @Override
     public String toString() {
-        return "Visitor{" +
+        return "AbstractVisitor{" +
                 "name='" + name + '\'' +
                 '}';
     }

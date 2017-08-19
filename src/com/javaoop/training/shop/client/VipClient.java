@@ -1,6 +1,8 @@
 package com.javaoop.training.shop.client;
 
-public class VipClient extends Visitor {
+import com.javaoop.training.shop.interfaces.GoodInterface;
+
+public class VipClient extends AbstractVisitor {
     private double discount;
 
     public VipClient() {
@@ -20,9 +22,9 @@ public class VipClient extends Visitor {
     }
 
     @Override
-    public void buy() {
+    public void buy(GoodInterface good) {
         if (!checkDiscount())
-            super.buy();
+            super.buy(good);
         else {
 
         }

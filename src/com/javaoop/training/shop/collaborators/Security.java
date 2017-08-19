@@ -2,7 +2,7 @@ package com.javaoop.training.shop.collaborators;
 
 import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
-public class Security extends Employee {
+public class Security extends AbstractEmployee {
 
     public Security() {
     }

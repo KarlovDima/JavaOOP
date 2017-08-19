@@ -1,17 +1,17 @@
 package com.javaoop.training.shop.collaborators;
 
-import com.javaoop.training.shop.bank.Bank;
+import com.javaoop.training.shop.bank.AbstractBank;
 import com.javaoop.training.shop.interfaces.BankInterface;
 import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
-public class Banker extends Employee {
+public class Banker extends AbstractEmployee {
     private BankInterface bank;
 
-    public Banker(Bank bank) {
+    public Banker(BankInterface bank) {
         this.bank = bank;
     }
 
-    public Banker(String name, DepartmentInterface department, boolean isFree, Bank bank) {
+    public Banker(String name, DepartmentInterface department, boolean isFree, AbstractBank bank) {
         super(name, department, isFree);
         this.bank = bank;
     }
@@ -20,7 +20,7 @@ public class Banker extends Employee {
         return bank;
     }
 
-    public void setBank(Bank bank) {
+    public void setBank(AbstractBank bank) {
         this.bank = bank;
     }
 

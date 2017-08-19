@@ -2,7 +2,7 @@ package com.javaoop.training.shop.collaborators;
 
 import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
-public class Administrator extends Employee {
+public class Administrator extends AbstractEmployee {
 
     public Administrator() {
     }

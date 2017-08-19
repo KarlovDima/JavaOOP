@@ -5,6 +5,10 @@ import com.javaoop.training.shop.interfaces.DepartmentInterface;
 public class GameConsole extends ElectronicDevice {
     private int ram;
 
+    public GameConsole(String name) {
+        super(name);
+    }
+
     public GameConsole(int ram) {
         this.ram = ram;
     }

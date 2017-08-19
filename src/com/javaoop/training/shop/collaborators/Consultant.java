@@ -2,7 +2,7 @@ package com.javaoop.training.shop.collaborators;
 
 import com.javaoop.training.shop.interfaces.DepartmentInterface;
 
-public class Consultant extends Employee {
+public class Consultant extends AbstractEmployee {
 
     public Consultant() {
     }

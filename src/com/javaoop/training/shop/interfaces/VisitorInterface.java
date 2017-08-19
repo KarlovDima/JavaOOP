@@ -2,9 +2,9 @@ package com.javaoop.training.shop.interfaces;
 
 public interface VisitorInterface {
 
-    void buy();
+    void buy(GoodInterface good);
 
-    void returnGood();
+    void returnGood(GoodInterface good);
 
     String getName();
 }

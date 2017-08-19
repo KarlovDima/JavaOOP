@@ -6,16 +6,16 @@ import com.javaoop.training.shop.interfaces.GoodInterface;
 
 import java.util.ArrayList;
 
-public abstract class Department implements DepartmentInterface {
+public abstract class AbstractDepartment implements DepartmentInterface {
 
     private String name;
     private ArrayList<EmployeeInterface> employeeArrayList;
     private ArrayList<GoodInterface> goodArrayList;
 
-    public Department() {
+    public AbstractDepartment() {
     }
 
-    public Department(String name, ArrayList<EmployeeInterface> employeeArrayList, ArrayList<GoodInterface> goodArrayList) {
+    public AbstractDepartment(String name, ArrayList<EmployeeInterface> employeeArrayList, ArrayList<GoodInterface> goodArrayList) {
         this.name = name;
         this.employeeArrayList = employeeArrayList;
         this.goodArrayList = goodArrayList;

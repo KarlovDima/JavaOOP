@@ -1,6 +1,6 @@
 package com.javaoop.training.shop.bank;
 
-public class TinkoffBank extends Bank {
+public class TinkoffBank extends AbstractBank {
 
     public TinkoffBank() {
     }
